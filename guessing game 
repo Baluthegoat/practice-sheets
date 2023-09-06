@@ -1,0 +1,42 @@
+#print('welcome to the guessing game')
+#userName = input('What is you name?')
+#print('welcome. ', userName, "lets play a guessing game")
+#tries = 0
+#secretNumber = 9
+
+#while tries < 5:    
+    #guess = int(input('Guess a numnber from 1 to 10:'))
+
+#if guess == secretNumber:
+    #print('Your guess is correct')
+    #print('Tries:', tries + 1)
+    #print('Game Over!')
+   # break 
+#else:
+ #   tries = tries + 1
+  #  print('Try again')
+
+#if tries == 5:
+    #print('Out of tries! The secret number was', secretNumber)
+
+print('Welcome to the guessing game')
+userName = input('What is your name? ')
+print('Welcome,', userName, "let's play a guessing game")
+
+tries = 0
+secretNumber = 9
+
+while tries < 5:    
+    guess = int(input('Guess a number from 1 to 10: '))
+
+    if guess == secretNumber:
+        print('Your guess is correct')
+        print('Tries:', tries + 1)
+        print('Game Over!')
+        break 
+    else:
+        tries = tries + 1
+        print('Try again')
+
+if tries == 5:
+    print('Out of tries! The secret number was', secretNumber)

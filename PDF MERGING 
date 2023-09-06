@@ -1,0 +1,23 @@
+#import PyPDF2 
+#import os
+
+#merge = PyPDF2.PdfFileMerge()
+
+#for file in os.listdir(os.curdir):
+    #if file.endswith(".pdf"):
+        #merge.append(file)
+
+   # merge.write("combinedBSUniDocs.pdf")
+   # merge.close()
+
+import PyPDF2
+import os
+
+merge = PyPDF2.PdfFileMerger()
+
+for file in os.listdir(os.curdir):
+    if file.endswith(".pdf"):
+        merge.append(file)
+
+merge.write("combinedBSUniDocs.pdf")
+merge.close()  # Close the merged PDF file
