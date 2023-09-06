@@ -8,4 +8,3 @@
             dict_of_seen_values[value] = idx  
 nums = [2,7,11,15]
 print(idx)
-## add comment
